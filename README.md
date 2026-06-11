@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Portfolio Website
 
-## Getting Started
+A clean, modern, light-themed personal portfolio built using **Next.js** and **TypeScript**. Optimized for showcasing software engineering expertise, data science research, and academic achievements to recruiters and engineering managers.
 
-First, run the development server:
+🔗 **Live Link:** [https://github.com/jnanadeep-sr/jnanadeep-portfolio](https://github.com/jnanadeep-sr/jnanadeep-portfolio)
 
+---
+
+## 🚀 Key Features
+
+- **Availability Callout:** Sticky banner highlighting openness to internships and working student positions in Germany.
+- **Categorized Skills:** Dynamic stack presentation cleanly grouped by architecture, languages, databases, and testing tools.
+- **Interactive Experience Tabs:** Smooth state-managed tabs allowing recruiters to toggle between full-time Software Engineer, Associate SE, and Intern roles without page jumping.
+- **Responsive Architecture:** Fully optimized for fluid scaling across desktop monitors, tablets, and smartphones using independent CSS configuration sheets.
+
+---
+
+## 🛠️ Tech Stack & Skill Layout
+
+### Backend & Architecture
+- Spring Boot, Spring MVC, Microservices, REST APIs, SDLC
+
+### Languages & Data Science
+- Java Core, Python, R, SQL
+
+### Cloud & Databases
+- AWS Lambda, DynamoDB, MongoDB, Redis, Elastic Search
+
+### Testing & Tools
+- JUnit, Mockito, Git, GitHub CLI
+
+---
+
+## 📦 Local Installation & Setup
+
+To clone and run this portfolio website locally on your machine, follow these steps:
+
+### 1. Clone the Repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+git clone [https://github.com/jnanadeep-sr/jnanadeep-portfolio.git](https://github.com/jnanadeep-sr/jnanadeep-portfolio.git)
+cd jnanadeep-portfolio
