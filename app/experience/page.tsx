@@ -1,39 +1,17 @@
 'use client';
 
 import { useState } from 'react';
-import { languages, LanguageCode } from '../lang';
+import Header from '../components/Header';
+import { useTranslation } from '../lang/LanguageContext';
 import '../portfolio.css';
 
-const defaultLanguage: LanguageCode = 'en';
-
 export default function ExperiencePage() {
-  const [language, setLanguage] = useState<LanguageCode>(defaultLanguage);
+  const t = useTranslation();
   const [activeJob, setActiveJob] = useState<'se' | 'ase' | 'intern'>('se');
-  const t = languages[language];
 
   return (
     <div className="portfolio-body">
-      <nav className="portfolio-navbar">
-        <div className="portfolio-logo">{t.title}</div>
-        <div className="portfolio-navActions">
-          <div className="portfolio-languageToggle">
-            <button
-              type="button"
-              className={`portfolio-languageButton ${language === 'en' ? 'portfolio-languageButtonActive' : ''}`}
-              onClick={() => setLanguage('en')}
-            >
-              EN
-            </button>
-            <button
-              type="button"
-              className={`portfolio-languageButton ${language === 'de' ? 'portfolio-languageButtonActive' : ''}`}
-              onClick={() => setLanguage('de')}
-            >
-              DE
-            </button>
-          </div>
-        </div>
-      </nav>
+      <Header />
 
       <main className="portfolio-wrapper">
         <section className="portfolio-experienceSection">

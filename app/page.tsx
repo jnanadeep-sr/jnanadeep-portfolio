@@ -1,46 +1,15 @@
 'use client';
 
-import { useState } from 'react';
-import { languages, LanguageCode } from './lang';
+import Header from './components/Header';
+import { useTranslation } from './lang/LanguageContext';
 import './portfolio.css';
 
 export default function Home() {
-  const [language, setLanguage] = useState<LanguageCode>('en');
-  const t = languages[language];
+  const t = useTranslation();
 
   return (
     <div className="portfolio-body">
-      <nav className="portfolio-navbar">
-        <div className="portfolio-logo">{t.title}</div>
-
-        <div className="portfolio-navActions">
-          <div className="portfolio-languageToggle">
-            <button
-              type="button"
-              className={`portfolio-languageButton ${language === 'en' ? 'portfolio-languageButtonActive' : ''}`}
-              onClick={() => setLanguage('en')}
-            >
-              EN
-            </button>
-            <button
-              type="button"
-              className={`portfolio-languageButton ${language === 'de' ? 'portfolio-languageButtonActive' : ''}`}
-              onClick={() => setLanguage('de')}
-            >
-              DE
-            </button>
-          </div>
-
-          <div className="portfolio-navLinks">
-            <a href="#about">{t.navLinks[0]}</a>
-            <a href="/experience">{t.navLinks[1]}</a>
-            <a href="#education">{t.navLinks[2]}</a>
-            <a href="https://www.linkedin.com/in/jnanadeep-s-r-142b12197" target="_blank" rel="noopener noreferrer">
-              {t.navLinks[3]}
-            </a>
-          </div>
-        </div>
-      </nav>
+      <Header />
 
       <div className="portfolio-wrapper">
         <section id="about" className="portfolio-heroSection">

@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx eslint *)",
+      "Bash(curl -s http://localhost:3000/experience -o /tmp/exp3.html -w \"experience HTTP %{http_code}\\\\n\")",
+      "Read(//tmp/**)"
+    ]
+  }
+}
