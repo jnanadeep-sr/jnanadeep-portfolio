@@ -1,7 +1,7 @@
 import { Translation } from './types';
 
 export const en: Translation = {
-  navLinks: ['Home', 'Experience', 'Education', 'Contact'],
+  navLinks: ['Home', 'Experience', 'Projects', 'Education', 'Contact'],
   statusBadge: 'Open to internships & working student positions in Germany',
   title: 'Jnanadeep S R',
   subtitle:
@@ -78,6 +78,26 @@ export const en: Translation = {
       ]
     }
   },
+  projectsTitle: 'Projects',
+  projectsIntro: 'A couple of things I\'m building on the side — both still in progress.',
+  projects: [
+    {
+      name: 'ccle-ml-dr-analysis',
+      status: 'In Progress',
+      summary:
+        'Exploring the Cancer Cell Line Encyclopedia (CCLE) dataset — ~545 drugs × 887 cell lines × 19K+ gene expression features — to find which genes drive drug sensitivity (EC50) and train per-drug regression models that predict response directly from gene expression profiles.',
+      stack: ['Python', 'pandas', 'scikit-learn', 'NumPy', 'Matplotlib', 'Seaborn'],
+      href: 'https://github.com/jnanadeep-sr/ccle-ml-dr-analysis'
+    },
+    {
+      name: 'airbnb-price-prediction',
+      status: 'In Progress',
+      summary:
+        'A multimodal ML pipeline (course project) predicting nightly Airbnb listing prices from Inside Airbnb data — combining tabular listing features, geolocation, and review-text sentiment (NLTK VADER) through tree ensembles, AutoGluon, and stacked regressors.',
+      stack: ['Python', 'scikit-learn', 'XGBoost', 'AutoGluon', 'NLTK', 'SHAP'],
+      href: 'https://github.com/jnanadeep-sr/airbnb-price-prediction'
+    }
+  ],
   educationTitle: 'Education',
   certificationsTitle: 'Certifications',
   educationItems: [
