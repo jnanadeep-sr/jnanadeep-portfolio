@@ -8,58 +8,60 @@ export default function Header() {
   const t = useTranslation();
 
   return (
-    <nav className="portfolio-navbar">
-      <div className="portfolio-navBrand">
-        <div className="portfolio-windowDots" aria-hidden="true">
-          <span className="portfolio-dot portfolio-dotRed" />
-          <span className="portfolio-dot portfolio-dotYellow" />
-          <span className="portfolio-dot portfolio-dotGreen" />
-        </div>
-        <Link href="/" className="portfolio-logo">
-          <span className="portfolio-logoUser">jnanadeep</span>
-          <span className="portfolio-logoAt">@</span>
-          <span className="portfolio-logoHost">dev</span>
-          <span className="portfolio-logoSymbol">:~$</span>
-        </Link>
-      </div>
-
-      <div className="portfolio-navActions">
-        <div className="portfolio-languageToggle">
-          <button
-            type="button"
-            className={`portfolio-languageButton ${language === 'en' ? 'portfolio-languageButtonActive' : ''}`}
-            onClick={() => setLanguage('en')}
-          >
-            en
-          </button>
-          <button
-            type="button"
-            className={`portfolio-languageButton ${language === 'de' ? 'portfolio-languageButtonActive' : ''}`}
-            onClick={() => setLanguage('de')}
-          >
-            de
-          </button>
+    <div className="portfolio-navbarWrapper">
+      <nav className="portfolio-navbar">
+        <div className="portfolio-navBrand">
+          <div className="portfolio-windowDots" aria-hidden="true">
+            <span className="portfolio-dot portfolio-dotRed" />
+            <span className="portfolio-dot portfolio-dotYellow" />
+            <span className="portfolio-dot portfolio-dotGreen" />
+          </div>
+          <Link href="/" className="portfolio-logo">
+            <span className="portfolio-logoUser">jnanadeep</span>
+            <span className="portfolio-logoAt">@</span>
+            <span className="portfolio-logoHost">dev</span>
+            <span className="portfolio-logoSymbol">:~$</span>
+          </Link>
         </div>
 
-        <div className="portfolio-navLinks">
-          <Link href="/#about">
-            <span className="portfolio-navLinkPath">~/</span>
-            {t.navLinks[0]}
-          </Link>
-          <Link href="/experience">
-            <span className="portfolio-navLinkPath">~/</span>
-            {t.navLinks[1]}
-          </Link>
-          <Link href="/#education">
-            <span className="portfolio-navLinkPath">~/</span>
-            {t.navLinks[2]}
-          </Link>
-          <a href="https://www.linkedin.com/in/jnanadeep-s-r-142b12197" target="_blank" rel="noopener noreferrer">
-            <span className="portfolio-navLinkPath">~/</span>
-            {t.navLinks[3]}
-          </a>
+        <div className="portfolio-navActions">
+          <div className="portfolio-languageToggle">
+            <button
+              type="button"
+              className={`portfolio-languageButton ${language === 'en' ? 'portfolio-languageButtonActive' : ''}`}
+              onClick={() => setLanguage('en')}
+            >
+              en
+            </button>
+            <button
+              type="button"
+              className={`portfolio-languageButton ${language === 'de' ? 'portfolio-languageButtonActive' : ''}`}
+              onClick={() => setLanguage('de')}
+            >
+              de
+            </button>
+          </div>
+
+          <div className="portfolio-navLinks">
+            <Link href="/#about">
+              <span className="portfolio-navLinkPath">~/</span>
+              {t.navLinks[0]}
+            </Link>
+            <Link href="/experience">
+              <span className="portfolio-navLinkPath">~/</span>
+              {t.navLinks[1]}
+            </Link>
+            <Link href="/#education">
+              <span className="portfolio-navLinkPath">~/</span>
+              {t.navLinks[2]}
+            </Link>
+            <a href="https://www.linkedin.com/in/jnanadeep-s-r-142b12197" target="_blank" rel="noopener noreferrer">
+              <span className="portfolio-navLinkPath">~/</span>
+              {t.navLinks[3]}
+            </a>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   );
 }
