@@ -22,10 +22,6 @@ export type Translation = {
   }[];
   resumeButton: string;
   contactButton: string;
-  quickActions: {
-    label: string;
-    href: string;
-  }[];
   experienceTitle: string;
   jobTabs: string[];
   jobs: Record<'se' | 'ase' | 'intern', Job>;
@@ -41,4 +37,14 @@ export type Translation = {
     linkText: string;
     description: string;
   };
+  contactTitle: string;
+  contactInfo: {
+    label: string;
+    value: string;
+    href?: string;
+  }[];
+  socialLinks: {
+    label: string;
+    href: string;
+  }[];
 };

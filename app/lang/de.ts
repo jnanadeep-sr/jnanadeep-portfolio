@@ -42,9 +42,6 @@ export const de: Translation = {
   ],
   resumeButton: 'Zertifikat ansehen',
   contactButton: 'Kontakt',
-  quickActions: [
-    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/jnanadeep-s-r-142b12197' }
-  ],
   experienceTitle: 'Berufserfahrung',
   jobTabs: ['Software-Ingenieur', 'Associate SE', 'Praktikum'],
   jobs: {
@@ -100,5 +97,16 @@ export const de: Translation = {
     linkText: 'PDF ansehen ↗',
     description:
       'Zeigt Fachwissen in grundlegenden Ingenieurprinzipien und algorithmischem Problemlösen. Klicken Sie, um das offizielle Dokument zu öffnen und zu prüfen.'
-  }
+  },
+  contactTitle: 'Kontakt',
+  contactInfo: [
+    { label: 'email', value: 'srjnanadeep@gmail.com', href: 'mailto:srjnanadeep@gmail.com' },
+    { label: 'telefon', value: '+49 160 91040865', href: 'tel:+4916091040865' },
+    { label: 'adresse', value: 'Emilienstraße 4, 37075 Göttingen, Deutschland' }
+  ],
+  socialLinks: [
+    { label: 'GitHub', href: 'https://github.com/jnanadeep-sr?tab=repositories' },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/jnanadeep-s-r-142b12197' },
+    { label: 'LeetCode', href: 'https://leetcode.com/u/jnanadeep9023/' }
+  ]
 };

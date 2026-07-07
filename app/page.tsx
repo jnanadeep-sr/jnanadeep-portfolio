@@ -47,9 +47,7 @@ export default function Home() {
                   {t.resumeButton}
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/jnanadeep-s-r-142b12197"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#contact"
                   className="portfolio-button portfolio-buttonSecondary"
                 >
                   {t.contactButton}
@@ -130,6 +128,54 @@ export default function Home() {
               </div>
               <p className="portfolio-certDescription term-comment">{t.certificationCard.description}</p>
             </a>
+          </div>
+        </section>
+
+        <hr className="portfolio-divider" />
+
+        <section id="contact" className="portfolio-contactSection">
+          <h2 className="portfolio-sectionTitle">{t.contactTitle}</h2>
+
+          <div className="term-window">
+            <div className="term-titlebar">
+              <span className="portfolio-dot portfolio-dotRed" />
+              <span className="portfolio-dot portfolio-dotYellow" />
+              <span className="portfolio-dot portfolio-dotGreen" />
+              <span className="term-titlebarLabel">contact.json</span>
+            </div>
+
+            <div className="term-body">
+              <p className="portfolio-codeLine">
+                <span className="portfolio-fnKeyword">const</span> contact = {'{'}
+              </p>
+              <div className="portfolio-contactGrid">
+                {t.contactInfo.map((item, index) => (
+                  <div key={index} className="portfolio-contactRow">
+                    <span className="portfolio-contactLabel">{item.label}:</span>
+                    {item.href ? (
+                      <a href={item.href} className="portfolio-contactValue">{item.value}</a>
+                    ) : (
+                      <span className="portfolio-contactValue">{item.value}</span>
+                    )}
+                  </div>
+                ))}
+              </div>
+              <p className="portfolio-codeLine">{'}'};</p>
+
+              <div className="portfolio-socialLinks">
+                {t.socialLinks.map((link, index) => (
+                  <a
+                    key={index}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="portfolio-socialPill"
+                  >
+                    {link.label} ↗
+                  </a>
+                ))}
+              </div>
+            </div>
           </div>
         </section>
       </div>
