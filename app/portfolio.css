@@ -15,6 +15,7 @@
   --term-orange: #ffa657;
   --term-pink: #ff7b72;
   --term-yellow: #e3b341;
+  --nav-height: 100px;
 }
 
 /* Global configuration resets */
@@ -41,6 +42,11 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--term-border);
+}
+
+/* Offsets anchor targets so the sticky header doesn't cover them on jump */
+section[id] {
+  scroll-margin-top: var(--nav-height);
 }
 
 .portfolio-navbar {
@@ -800,6 +806,10 @@
 }
 
 @media (max-width: 700px) {
+  :root {
+    --nav-height: 220px;
+  }
+
   .portfolio-navbar {
     flex-direction: column;
     align-items: stretch;
