@@ -41,6 +41,7 @@ export const de: Translation = {
     }
   ],
   resumeButton: 'Lebenslauf herunterladen',
+  resumeHref: '/resume_german.pdf',
   contactButton: 'Kontakt',
   experienceTitle: 'Berufserfahrung',
   jobTabs: ['Software-Ingenieur', 'Associate SE', 'Praktikum'],

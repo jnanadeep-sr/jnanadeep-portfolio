@@ -40,7 +40,7 @@ export default function Home() {
 
               <div className="portfolio-heroActions">
                 <a
-                  href="/resume.pdf"
+                  href={t.resumeHref}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="portfolio-button portfolio-buttonPrimary"

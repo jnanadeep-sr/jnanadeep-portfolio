@@ -29,6 +29,7 @@ export type Translation = {
     description: string;
   }[];
   resumeButton: string;
+  resumeHref: string;
   contactButton: string;
   experienceTitle: string;
   jobTabs: string[];

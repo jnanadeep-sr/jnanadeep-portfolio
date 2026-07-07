@@ -41,6 +41,7 @@ export const en: Translation = {
     }
   ],
   resumeButton: 'Download Resume',
+  resumeHref: '/resume_english.pdf',
   contactButton: 'Contact',
   experienceTitle: 'Professional Experience',
   jobTabs: ['Software Engineer', 'Associate SE', 'Intern'],
