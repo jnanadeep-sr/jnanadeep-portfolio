@@ -40,7 +40,7 @@ export const en: Translation = {
       description: 'AWS architecture, serverless integrations, and reliable infrastructure for production apps.'
     }
   ],
-  resumeButton: 'View Certification',
+  resumeButton: 'Download Resume',
   contactButton: 'Contact',
   experienceTitle: 'Professional Experience',
   jobTabs: ['Software Engineer', 'Associate SE', 'Intern'],
@@ -128,5 +128,6 @@ export const en: Translation = {
     { label: 'GitHub', href: 'https://github.com/jnanadeep-sr?tab=repositories' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/jnanadeep-s-r-142b12197' },
     { label: 'LeetCode', href: 'https://leetcode.com/u/jnanadeep9023/' }
-  ]
+  ],
+  footerNote: 'Built with Next.js, deployed on Vercel.'
 };

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import { useTranslation } from '../lang/LanguageContext';
 import '../portfolio.css';
 
@@ -72,6 +73,8 @@ export default function ExperiencePage() {
           </div>
         </section>
       </main>
+
+      <Footer />
     </div>
   );
 }

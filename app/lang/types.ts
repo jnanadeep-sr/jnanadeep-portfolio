@@ -58,4 +58,5 @@ export type Translation = {
     label: string;
     href: string;
   }[];
+  footerNote: string;
 };

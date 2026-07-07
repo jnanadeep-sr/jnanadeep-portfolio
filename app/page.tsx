@@ -1,6 +1,7 @@
 'use client';
 
 import Header from './components/Header';
+import Footer from './components/Footer';
 import { useTranslation } from './lang/LanguageContext';
 import './portfolio.css';
 
@@ -39,7 +40,7 @@ export default function Home() {
 
               <div className="portfolio-heroActions">
                 <a
-                  href="https://infytq.onwingspan.com/public-assets/Infosys-Certified-Software-Programmer_2022/7c596724-35a7-46eb-aa4e-be27f6c65af3.pdf"
+                  href="/resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="portfolio-button portfolio-buttonPrimary"
@@ -179,6 +180,8 @@ export default function Home() {
           </div>
         </section>
       </div>
+
+      <Footer />
     </div>
   );
 }
