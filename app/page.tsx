@@ -13,53 +13,76 @@ export default function Home() {
 
       <div className="portfolio-wrapper">
         <section id="about" className="portfolio-heroSection">
-          <div className="portfolio-statusBadge">
-            <span className="portfolio-pulseDot"></span>
-            {t.statusBadge}
-          </div>
+          <div className="term-window">
+            <div className="term-titlebar">
+              <span className="portfolio-dot portfolio-dotRed" />
+              <span className="portfolio-dot portfolio-dotYellow" />
+              <span className="portfolio-dot portfolio-dotGreen" />
+              <span className="term-titlebarLabel">jnanadeep@portfolio: ~</span>
+            </div>
 
-          <h1 className="portfolio-title">{t.title}</h1>
-          <p className="portfolio-subtitle">{t.subtitle}</p>
+            <div className="term-body">
+              <p className="term-promptLine">
+                <span className="term-prompt">whoami</span>
+              </p>
 
-          <div className="portfolio-heroActions">
-            <a
-              href="https://infytq.onwingspan.com/public-assets/Infosys-Certified-Software-Programmer_2022/7c596724-35a7-46eb-aa4e-be27f6c65af3.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="portfolio-button portfolio-buttonPrimary"
-            >
-              {t.resumeButton}
-            </a>
-            <a
-              href="https://www.linkedin.com/in/jnanadeep-s-r-142b12197"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="portfolio-button portfolio-buttonSecondary"
-            >
-              {t.contactButton}
-            </a>
-          </div>
+              <div className="portfolio-statusBadge">
+                <span className="portfolio-pulseDot"></span>
+                {t.statusBadge}
+              </div>
 
-          <ul className="portfolio-quickList">
-            {t.quickList.map((item, index) => (
-              <li key={index}>
-                <span className="portfolio-bulletArrow">▶</span>
-                {item}
-              </li>
-            ))}
-          </ul>
+              <h1 className="portfolio-title">
+                {t.title}
+                <span className="term-cursor" />
+              </h1>
+              <p className="portfolio-subtitle term-comment">{t.subtitle}</p>
 
-          <div className="portfolio-skillsContainer">
-            {t.skillGroups.map((group, index) => (
-              <div key={index} className="portfolio-skillGroup">
-                <h3 className="portfolio-groupLabel">{group.category}</h3>
-                <div className="portfolio-pillsContainer">
-                  {group.skills.map((skill, idx) => (
-                    <span key={idx} className="portfolio-pill">{skill}</span>
+              <div className="portfolio-heroActions">
+                <a
+                  href="https://infytq.onwingspan.com/public-assets/Infosys-Certified-Software-Programmer_2022/7c596724-35a7-46eb-aa4e-be27f6c65af3.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="portfolio-button portfolio-buttonPrimary"
+                >
+                  {t.resumeButton}
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/jnanadeep-s-r-142b12197"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="portfolio-button portfolio-buttonSecondary"
+                >
+                  {t.contactButton}
+                </a>
+              </div>
+
+              <ul className="portfolio-quickList">
+                {t.quickList.map((item, index) => (
+                  <li key={index}>
+                    <span className="portfolio-bulletArrow">&gt;</span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+
+              <div className="portfolio-codeBlock">
+                <div className="portfolio-codeBlockTab">stack.json</div>
+                <div className="portfolio-skillsContainer">
+                  <p className="portfolio-codeLine">const stack = {'{'}</p>
+                  {t.skillGroups.map((group, index) => (
+                    <div key={index} className="portfolio-skillGroup">
+                      <h3 className="portfolio-groupLabel">{group.category}:</h3>
+                      <div className="portfolio-pillsContainer">
+                        {group.skills.map((skill, idx) => (
+                          <span key={idx} className="portfolio-pill">{skill}</span>
+                        ))}
+                      </div>
+                    </div>
                   ))}
+                  <p className="portfolio-codeLine">{'}'};</p>
                 </div>
               </div>
-            ))}
+            </div>
           </div>
         </section>
 
@@ -68,8 +91,10 @@ export default function Home() {
           <div className="portfolio-whatGrid">
             {t.whatIDo.map((item, index) => (
               <div key={index} className="portfolio-whatCard">
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
+                <h3>
+                  <span className="portfolio-fnKeyword">function</span> {item.title}()
+                </h3>
+                <p className="term-comment">{item.description}</p>
               </div>
             ))}
           </div>
@@ -103,7 +128,7 @@ export default function Home() {
                 <h4 className="portfolio-certTitle">{t.certificationCard.title}</h4>
                 <span className="portfolio-certLinkText">{t.certificationCard.linkText}</span>
               </div>
-              <p className="portfolio-certDescription">{t.certificationCard.description}</p>
+              <p className="portfolio-certDescription term-comment">{t.certificationCard.description}</p>
             </a>
           </div>
         </section>
