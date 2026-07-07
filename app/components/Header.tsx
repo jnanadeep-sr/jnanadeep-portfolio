@@ -51,13 +51,17 @@ export default function Header() {
               <span className="portfolio-navLinkPath">~/</span>
               {t.navLinks[1]}
             </Link>
-            <Link href="/#education">
+            <Link href="/projects">
               <span className="portfolio-navLinkPath">~/</span>
               {t.navLinks[2]}
             </Link>
-            <Link href="/#contact">
+            <Link href="/#education">
               <span className="portfolio-navLinkPath">~/</span>
               {t.navLinks[3]}
+            </Link>
+            <Link href="/#contact">
+              <span className="portfolio-navLinkPath">~/</span>
+              {t.navLinks[4]}
             </Link>
           </div>
         </div>

@@ -5,6 +5,14 @@ export type Job = {
   bullets: string[];
 };
 
+export type Project = {
+  name: string;
+  status: string;
+  summary: string;
+  stack: string[];
+  href: string;
+};
+
 export type Translation = {
   navLinks: string[];
   statusBadge: string;
@@ -25,6 +33,9 @@ export type Translation = {
   experienceTitle: string;
   jobTabs: string[];
   jobs: Record<'se' | 'ase' | 'intern', Job>;
+  projectsTitle: string;
+  projectsIntro: string;
+  projects: Project[];
   educationTitle: string;
   certificationsTitle: string;
   educationItems: {
