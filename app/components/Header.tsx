@@ -55,10 +55,10 @@ export default function Header() {
               <span className="portfolio-navLinkPath">~/</span>
               {t.navLinks[2]}
             </Link>
-            <a href="https://www.linkedin.com/in/jnanadeep-s-r-142b12197" target="_blank" rel="noopener noreferrer">
+            <Link href="/#contact">
               <span className="portfolio-navLinkPath">~/</span>
               {t.navLinks[3]}
-            </a>
+            </Link>
           </div>
         </div>
       </nav>

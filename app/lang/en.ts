@@ -42,9 +42,6 @@ export const en: Translation = {
   ],
   resumeButton: 'View Certification',
   contactButton: 'Contact',
-  quickActions: [
-    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/jnanadeep-s-r-142b12197' }
-  ],
   experienceTitle: 'Professional Experience',
   jobTabs: ['Software Engineer', 'Associate SE', 'Intern'],
   jobs: {
@@ -100,5 +97,16 @@ export const en: Translation = {
     linkText: 'View PDF ↗',
     description:
       'Demonstrated expertise in foundational engineering principles and algorithmic problem-solving. Click to open and verify formal document.'
-  }
+  },
+  contactTitle: 'Contact',
+  contactInfo: [
+    { label: 'email', value: 'srjnanadeep@gmail.com', href: 'mailto:srjnanadeep@gmail.com' },
+    { label: 'phone', value: '+49 160 91040865', href: 'tel:+4916091040865' },
+    { label: 'address', value: 'Emilienstraße 4, 37075 Göttingen, Germany' }
+  ],
+  socialLinks: [
+    { label: 'GitHub', href: 'https://github.com/jnanadeep-sr?tab=repositories' },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/jnanadeep-s-r-142b12197' },
+    { label: 'LeetCode', href: 'https://leetcode.com/u/jnanadeep9023/' }
+  ]
 };
