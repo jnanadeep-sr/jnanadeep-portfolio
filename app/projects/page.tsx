@@ -1,6 +1,7 @@
 'use client';
 
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import { useTranslation } from '../lang/LanguageContext';
 import '../portfolio.css';
 
@@ -55,6 +56,8 @@ export default function ProjectsPage() {
           </div>
         </section>
       </main>
+
+      <Footer />
     </div>
   );
 }

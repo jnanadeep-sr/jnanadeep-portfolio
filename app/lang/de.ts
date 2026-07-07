@@ -40,7 +40,8 @@ export const de: Translation = {
       description: 'AWS-Architekturen, serverlose Integrationen und zuverlässige Produktionsinfrastrukturen.'
     }
   ],
-  resumeButton: 'Zertifikat ansehen',
+  resumeButton: 'Lebenslauf herunterladen',
+  resumeHref: '/resume_german.pdf',
   contactButton: 'Kontakt',
   experienceTitle: 'Berufserfahrung',
   jobTabs: ['Software-Ingenieur', 'Associate SE', 'Praktikum'],
@@ -128,5 +129,6 @@ export const de: Translation = {
     { label: 'GitHub', href: 'https://github.com/jnanadeep-sr?tab=repositories' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/jnanadeep-s-r-142b12197' },
     { label: 'LeetCode', href: 'https://leetcode.com/u/jnanadeep9023/' }
-  ]
+  ],
+  footerNote: 'Erstellt mit Next.js, deployed auf Vercel.'
 };

@@ -28,6 +28,8 @@
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header Navigation Bar */
@@ -161,6 +163,9 @@
   max-width: 1100px;
   margin: 0 auto;
   padding: 3.5rem 2rem;
+  flex: 1 0 auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Terminal window chrome, reused for hero + experience */
@@ -831,4 +836,35 @@
   .portfolio-contactGrid {
     padding-left: 0;
   }
+
+  .portfolio-footerInner {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}
+
+/* Footer */
+.portfolio-footer {
+  flex-shrink: 0;
+  border-top: 1px solid var(--term-border);
+}
+
+.portfolio-footerInner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.8rem;
+}
+
+.portfolio-footerCopyright {
+  color: var(--term-muted);
+}
+
+.portfolio-footerNote {
+  color: var(--term-muted);
 }
