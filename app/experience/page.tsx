@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Reveal from '../components/Reveal';
 import { useTranslation } from '../lang/LanguageContext';
 import '../portfolio.css';
 
@@ -18,6 +19,7 @@ export default function ExperiencePage() {
         <section className="portfolio-experienceSection">
           <h1 className="portfolio-title">{t.experienceTitle}</h1>
 
+          <Reveal>
           <div className="term-window">
             <div className="term-titlebar">
               <span className="portfolio-dot portfolio-dotRed" />
@@ -47,30 +49,33 @@ export default function ExperiencePage() {
                   const job = t.jobs[jobKey];
                   return (
                     activeJob === jobKey && (
-                      <div key={jobKey}>
-                        <p className="portfolio-codeLine">
-                          <span className="portfolio-fnKeyword">const</span> role = {'{'}
-                        </p>
-                        <div className="portfolio-jobHeader">
-                          <div>
-                            <h3 className="portfolio-jobTitle">{job.title}</h3>
-                            <p className="portfolio-jobCompany">{job.company}</p>
+                      <Reveal key={jobKey}>
+                        <div>
+                          <p className="portfolio-codeLine">
+                            <span className="portfolio-fnKeyword">const</span> role = {'{'}
+                          </p>
+                          <div className="portfolio-jobHeader">
+                            <div>
+                              <h3 className="portfolio-jobTitle">{job.title}</h3>
+                              <p className="portfolio-jobCompany">{job.company}</p>
+                            </div>
+                            <span className="portfolio-jobMeta"># {job.meta}</span>
                           </div>
-                          <span className="portfolio-jobMeta"># {job.meta}</span>
+                          <ul className="portfolio-bulletList">
+                            {job.bullets.map((bullet, idx) => (
+                              <li key={idx}>{bullet}</li>
+                            ))}
+                          </ul>
+                          <p className="portfolio-codeLine">{'}'};</p>
                         </div>
-                        <ul className="portfolio-bulletList">
-                          {job.bullets.map((bullet, idx) => (
-                            <li key={idx}>{bullet}</li>
-                          ))}
-                        </ul>
-                        <p className="portfolio-codeLine">{'}'};</p>
-                      </div>
+                      </Reveal>
                     )
                   );
                 })}
               </div>
             </div>
           </div>
+          </Reveal>
         </section>
       </main>
 
