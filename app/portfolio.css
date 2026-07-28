@@ -854,6 +854,27 @@ section[id] {
   }
 }
 
+/* Scroll reveal */
+.portfolio-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: opacity, transform;
+}
+
+.portfolio-revealVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
 /* Footer */
 .portfolio-footer {
   flex-shrink: 0;
